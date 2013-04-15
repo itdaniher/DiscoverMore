@@ -1,0 +1,21 @@
+osc: 4 ram: 8192 awg: 2 ram: 16384 pwg: 2 ram: 2048 pwr: 1 log: 0 ram: 0 num: 0 ram: 0 sio: 1
+.
+Oscilloscope with 4 channels:
+   8kS buffer, (+1kS noise) 40MSps
+   
+Arbitrary Waveform Generator x 2:
+   16kS carrier buffer or 8kS carrier and 8kS modulation, 40MSps
+   
+Supply Waveform Generator x 2
+   Positive and Negative Supply with 2kS buffer
+
+Power: 
+   Power Supply: 3.3V / 5V
+   Adjustable Supplies with Current Limit: 
+      Positive: 0..9V, 0..1500mA
+      Negative: 0..-9V, 0..1500mA
+   Voltage Reference x 2: 
+      Range: -10..10V
+   Voltmeters x 4:
+      Range: -12..12V
+   

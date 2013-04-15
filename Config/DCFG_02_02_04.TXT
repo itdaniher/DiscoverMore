@@ -1,0 +1,11 @@
+osc: 0 ram: 0 awg: 0 ram: 0 pwg: 0 ram: 0 pwr: 2 log: 16 ram: 16384 num: 16 ram: 16384 sio: 16
+.
+Logic Analyzer
+    16bits, 16kSamples buffer
+    
+Signal Generator
+    16bits, 16kSamples custom buffer
+
+Power Supplies: 
+    Positive: 5V
+    Negative: -5V

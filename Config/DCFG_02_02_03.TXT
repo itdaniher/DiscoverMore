@@ -1,0 +1,12 @@
+osc: 2 ram: 2048 awg: 2 ram: 16384 pwg: 0 ram: 0 pwr: 2 log: 0 ram: 0 num: 0 ram: 0 sio: 16
+.
+Oscilloscope with 2 channels:
+   2kSamples and 256S noise buffer
+
+Arbitrary Waveform Generator x 2:
+   16kSamples carrier and 2x 2kS modulation buffer
+
+Power Supplies: 
+    Positive: 5V
+    Negative: -5V
+    
