@@ -1,0 +1,267 @@
+
+WaveForms.exe:     file format pei-i386
+WaveForms.exe
+architecture: i386, flags 0x0000012f:
+HAS_RELOC, EXEC_P, HAS_LINENO, HAS_DEBUG, HAS_LOCALS, D_PAGED
+start address 0x006c0bf0
+
+Characteristics 0x102
+	executable
+	32 bit words
+
+Time/Date		Tue Feb 19 08:00:29 2013
+Magic			010b	(PE32)
+MajorLinkerVersion	9
+MinorLinkerVersion	0
+SizeOfCode		002bfe00
+SizeOfInitializedData	00220200
+SizeOfUninitializedData	00000000
+AddressOfEntryPoint	002c0bf0
+BaseOfCode		00001000
+BaseOfData		002c1000
+ImageBase		00400000
+SectionAlignment	00001000
+FileAlignment		00000200
+MajorOSystemVersion	5
+MinorOSystemVersion	0
+MajorImageVersion	0
+MinorImageVersion	0
+MajorSubsystemVersion	5
+MinorSubsystemVersion	0
+Win32Version		00000000
+SizeOfImage		0077c000
+SizeOfHeaders		00000400
+CheckSum		004e96a2
+Subsystem		00000002	(Windows GUI)
+DllCharacteristics	00008400
+SizeOfStackReserve	00100000
+SizeOfStackCommit	00001000
+SizeOfHeapReserve	00100000
+SizeOfHeapCommit	00001000
+LoaderFlags		00000000
+NumberOfRvaAndSizes	00000010
+
+The Data Directory
+Entry 0 00000000 00000000 Export Directory [.edata (or where ever we found it)]
+Entry 1 004bf920 0000008c Import Directory [parts of .idata]
+Entry 2 0075a000 000204cc Resource Directory [.rsrc]
+Entry 3 00000000 00000000 Exception Directory [.pdata]
+Entry 4 00000000 00000000 Security Directory
+Entry 5 0077b000 000000b8 Base Relocation Directory [.reloc]
+Entry 6 00000000 00000000 Debug Directory
+Entry 7 00000000 00000000 Description Directory
+Entry 8 00000000 00000000 Special Directory
+Entry 9 00000000 00000000 Thread Storage Directory [.tls]
+Entry a 00000000 00000000 Load Configuration Directory
+Entry b 00000000 00000000 Bound Import Directory
+Entry c 002c1000 00000120 Import Address Table Directory
+Entry d 00000000 00000000 Delay Import Directory
+Entry e 002c1170 00000048 CLR Runtime Header
+Entry f 00000000 00000000 Reserved
+
+There is an import table in .rdata at 0x8bf920
+
+The Import Tables (interpreted .rdata section contents)
+ vma:            Hint    Time      Forward  DLL       First
+                 Table   Stamp     Chain    Name      Thunk
+ 004bf920	004bfa24 00000000 00000000 004bfcdc 002c1078
+
+	DLL Name: dwf.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	4bfcba	   11  FDinstGetVersion
+	4bfcac	   33  FDinstTerm
+	4bfc9e	   23  FDinstParam
+	4bfc8a	    8  FDinstDiagnostic
+	4bfc78	   14  FDinstLastError
+	4bfacc	   21  FDinstOscCfg
+	4bfc64	   29  FDinstSetUserName
+	4bfc52	   10  FDinstEnumInfo
+	4bfc44	    9  FDinstEnum
+	4bfc36	   20  FDinstOpen
+	4bfc28	    5  FDinstClose
+	4bfc1c	   32  FDinstSpi
+	4bfc04	   34  FDinstUseCalibration
+	4bfbf2	    4  FDinstCalibrate
+	4bfbe2	   25  FDinstPwrSts
+	4bfbd2	    1  FDinstAwgPlay
+	4bfbc2	    3  FDinstAwgSts
+	4bfbae	    2  FDinstAwgPreview
+	4bfb9e	   22  FDinstOscSts
+	4bfb8e	   16  FDinstLogSts
+	4bfb7e	   31  FDinstSioSts
+	4bfb6e	   19  FDinstNumSts
+	4bfb5a	   18  FDinstNumPreview
+	4bfb4a	    7  FDinstDevSts
+	4bfb3c	   12  FDinstInfo
+	4bfb2c	    6  FDinstDevCfg
+	4bfb1c	   30  FDinstSioCfg
+	4bfb0c	   17  FDinstNumCfg
+	4bfafc	   15  FDinstLogCfg
+	4bfaec	   24  FDinstPwrCfg
+	4bfadc	    0  FDinstAwgCfg
+	4bfcce	   13  FDinstInit
+
+ 004bf934	004bfa0c 00000000 00000000 004bfd44 002c1060
+
+	DLL Name: WINMM.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	4bfd34	  168  waveOutClose
+	4bfd0a	  188  waveOutUnprepareHeader
+	4bfcfc	  180  waveOutOpen
+	4bfce4	  182  waveOutPrepareHeader
+	4bfd24	  189  waveOutWrite
+
+ 004bf948	004bf9ac 00000000 00000000 004bfd56 002c1000
+
+	DLL Name: KERNEL32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	4c00a2	  852  QueryPerformanceCounter
+	4c00bc	  614  GetTickCount
+	4c00cc	  429  GetCurrentThreadId
+	4c00e2	  426  GetCurrentProcessId
+	4c00f8	  591  GetSystemTimeAsFileTime
+	4bfd4e	 1057  Sleep
+
+ 004bf95c	004bf9c8 00000000 00000000 004bfe8e 002c101c
+
+	DLL Name: MSVCR90.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	4bfe68	  363  _encoded_null
+	4bfe56	  352  _decode_pointer
+	4bfe44	  362  _encode_pointer
+	4bfe36	  277  _amsg_exit
+	4bfe2c	  300  _cexit
+	4bfe78	  121  __FrameUnwindFilter
+	4bfe18	 1318  memcpy
+	4bfe08	   17  ??3@YAXPAX@Z
+	4bfdf8	   15  ??2@YAPAXI@Z
+	4bfdee	 1322  memset
+	4bfdcc	  119  __CxxUnregisterExceptionObject
+	4bfdb2	  117  __CxxQueryExceptionSize
+	4bfd9c	  111  __CxxDetectRethrow
+	4bfd7c	  118  __CxxRegisterExceptionObject
+	4bfd64	  112  __CxxExceptionFilter
+	4bfe22	 1359  strcmp
+
+ 004bf970	004bfab0 00000000 00000000 004c0096 002c1104
+
+	DLL Name: msvcm90.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	4bff92	    2  ?RegisterModuleUninitializer@<CrtImplementationDetails>@@YAXP$AAVEventHandler@System@@@Z
+	4bff40	    3  ?ThrowModuleLoadException@<CrtImplementationDetails>@@YAXP$AAVString@System@@@Z
+	4bfee4	    5  ?ThrowNestedModuleLoadException@<CrtImplementationDetails>@@YAXP$AAVException@System@@0@Z
+	4bfe9a	    0  ?DoCallBackInDefaultDomain@<CrtImplementationDetails>@@YAXP6GJPAX@Z0@Z
+	4bffee	    1  ?DoDllLanguageSupportValidation@<CrtImplementationDetails>@@YAXXZ
+	4c0032	    4  ?ThrowModuleLoadException@<CrtImplementationDetails>@@YAXP$AAVString@System@@P$AAVException@3@@Z
+
+ 004bf984	004bfaa8 00000000 00000000 004c0120 002c10fc
+
+	DLL Name: mscoree.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	4c0112	  116  _CorExeMain
+
+ 004bf998	00000000 00000000 00000000 00000000 00000000
+
+
+PE File Base Relocations (interpreted .reloc section contents)
+
+Virtual Address: 002b4000 Chunk size 12 (0xc) Number of fixups 2
+	reloc    0 offset  9cf [2b49cf] HIGHLOW
+	reloc    1 offset  b4b [2b4b4b] HIGHLOW
+
+Virtual Address: 002b5000 Chunk size 148 (0x94) Number of fixups 70
+	reloc    0 offset  53a [2b553a] HIGHLOW
+	reloc    1 offset  540 [2b5540] HIGHLOW
+	reloc    2 offset  546 [2b5546] HIGHLOW
+	reloc    3 offset  54c [2b554c] HIGHLOW
+	reloc    4 offset  552 [2b5552] HIGHLOW
+	reloc    5 offset  558 [2b5558] HIGHLOW
+	reloc    6 offset  55e [2b555e] HIGHLOW
+	reloc    7 offset  564 [2b5564] HIGHLOW
+	reloc    8 offset  56a [2b556a] HIGHLOW
+	reloc    9 offset  570 [2b5570] HIGHLOW
+	reloc   10 offset  576 [2b5576] HIGHLOW
+	reloc   11 offset  57c [2b557c] HIGHLOW
+	reloc   12 offset  582 [2b5582] HIGHLOW
+	reloc   13 offset  588 [2b5588] HIGHLOW
+	reloc   14 offset  58e [2b558e] HIGHLOW
+	reloc   15 offset  594 [2b5594] HIGHLOW
+	reloc   16 offset  59a [2b559a] HIGHLOW
+	reloc   17 offset  5a0 [2b55a0] HIGHLOW
+	reloc   18 offset  5a6 [2b55a6] HIGHLOW
+	reloc   19 offset  5ac [2b55ac] HIGHLOW
+	reloc   20 offset  5b2 [2b55b2] HIGHLOW
+	reloc   21 offset  5b8 [2b55b8] HIGHLOW
+	reloc   22 offset  5be [2b55be] HIGHLOW
+	reloc   23 offset  5c4 [2b55c4] HIGHLOW
+	reloc   24 offset  5ca [2b55ca] HIGHLOW
+	reloc   25 offset  5d0 [2b55d0] HIGHLOW
+	reloc   26 offset  5d6 [2b55d6] HIGHLOW
+	reloc   27 offset  5dc [2b55dc] HIGHLOW
+	reloc   28 offset  5e2 [2b55e2] HIGHLOW
+	reloc   29 offset  5e8 [2b55e8] HIGHLOW
+	reloc   30 offset  5ee [2b55ee] HIGHLOW
+	reloc   31 offset  5f4 [2b55f4] HIGHLOW
+	reloc   32 offset  5fa [2b55fa] HIGHLOW
+	reloc   33 offset  600 [2b5600] HIGHLOW
+	reloc   34 offset  606 [2b5606] HIGHLOW
+	reloc   35 offset  60c [2b560c] HIGHLOW
+	reloc   36 offset  612 [2b5612] HIGHLOW
+	reloc   37 offset  618 [2b5618] HIGHLOW
+	reloc   38 offset  61e [2b561e] HIGHLOW
+	reloc   39 offset  624 [2b5624] HIGHLOW
+	reloc   40 offset  62a [2b562a] HIGHLOW
+	reloc   41 offset  630 [2b5630] HIGHLOW
+	reloc   42 offset  636 [2b5636] HIGHLOW
+	reloc   43 offset  63c [2b563c] HIGHLOW
+	reloc   44 offset  642 [2b5642] HIGHLOW
+	reloc   45 offset  648 [2b5648] HIGHLOW
+	reloc   46 offset  64e [2b564e] HIGHLOW
+	reloc   47 offset  654 [2b5654] HIGHLOW
+	reloc   48 offset  65a [2b565a] HIGHLOW
+	reloc   49 offset  660 [2b5660] HIGHLOW
+	reloc   50 offset  66d [2b566d] HIGHLOW
+	reloc   51 offset  690 [2b5690] HIGHLOW
+	reloc   52 offset  69d [2b569d] HIGHLOW
+	reloc   53 offset  6a9 [2b56a9] HIGHLOW
+	reloc   54 offset  6b1 [2b56b1] HIGHLOW
+	reloc   55 offset  6b9 [2b56b9] HIGHLOW
+	reloc   56 offset  6c5 [2b56c5] HIGHLOW
+	reloc   57 offset  6e9 [2b56e9] HIGHLOW
+	reloc   58 offset  6f1 [2b56f1] HIGHLOW
+	reloc   59 offset  6fc [2b56fc] HIGHLOW
+	reloc   60 offset  702 [2b5702] HIGHLOW
+	reloc   61 offset  708 [2b5708] HIGHLOW
+	reloc   62 offset  70e [2b570e] HIGHLOW
+	reloc   63 offset  714 [2b5714] HIGHLOW
+	reloc   64 offset  71a [2b571a] HIGHLOW
+	reloc   65 offset  720 [2b5720] HIGHLOW
+	reloc   66 offset  726 [2b5726] HIGHLOW
+	reloc   67 offset  72c [2b572c] HIGHLOW
+	reloc   68 offset  732 [2b5732] HIGHLOW
+	reloc   69 offset    0 [2b5000] ABSOLUTE
+
+Virtual Address: 002c0000 Chunk size 12 (0xc) Number of fixups 2
+	reloc    0 offset  bf2 [2c0bf2] HIGHLOW
+	reloc    1 offset    0 [2c0000] ABSOLUTE
+
+Virtual Address: 002c1000 Chunk size 12 (0xc) Number of fixups 2
+	reloc    0 offset  168 [2c1168] HIGHLOW
+	reloc    1 offset  16c [2c116c] HIGHLOW
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .text         002bfc83  00401000  00401000  00000400  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .rdata        001ff12c  006c1000  006c1000  002c0200  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .data         00000200  008c1000  008c1000  004bf400  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .rsrc         000204cc  00b5a000  00b5a000  004bf600  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .reloc        00000738  00b7b000  00b7b000  004dfc00  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+SYMBOL TABLE:
+no symbols
+
+
